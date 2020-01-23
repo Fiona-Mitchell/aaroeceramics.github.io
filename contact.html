@@ -2,36 +2,48 @@
 <html>
 <head>
   <title>Ingrid Aaroe Ceramics</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-  <h1>INGRID AAROE CERAMICS</h1>
-<div class="floating">
-  <a href="index.html" class="link"><h3>portfolio</h3></a>
+  <div class="header">
+    <h1>INGRID AAROE CERAMICS<h1></a>
+    <div class="links">
+      <div class="floating">
+        <a href="index.html">portfolio</a>
+      </div>
+      <div class="floating">
+        <a href="about.html">about</a>
+      </div>
+      <div class="floating">
+        <a class="current" href="contact.html">contact</a>
+    </div>
+    </div>
   </div>
-  <div class="floating">
-  <a href="about.html" class="link"><h3>about</h3></a>
-  </div>
-  <div class="floating">
-  <a href="contact.html" class="link"><h3>contact</h3></a>
-  </div>
-</div>
+
 <div class="contact">
-<br>
-<p><br><br>ingridaaroe@hotmail.com<br>+44 07533769669<br><a href="http://instagram.com/ingridaaroeceramics" target=_0><img src="Images/IG.jpg" width="42" height="42" border="0"></a> 
- <br>
+<p>ingridaaroe@hotmail.com<br>+44 07533769669<br><a href="http://instagram.com/ingridaaroeceramics" target=_0><img src="Images/IG.jpg" width="42" height="42" border="0"></a>
+
  @ingridaaroeceramics
-</div>
 <div class="form">
- <form name="input" method="POST" action="https://formspree.io/ingridaaroe@hotmail.com">
-   <input type="text" name="Name" placeholder="Your name"><br>
-   <input type="email" name="_replyto" placeholder="Your email"><br>
-   <textarea name="message"placeholder="Type your message"></textarea><br>
-   <input type="submit" value="Send">
-   <input type="hidden" name="_subject" value="Enter your subject here" />
-   <input type="hidden" name="_next" value="thanks.html" />
-  </form>
+
+  <form action="https://formspree.io/ingridaaroe@hotmail.com">
+  <div class="form-group">
+    <label for="name">Your name:</label>
+    <input type="name" class="form-control" id="name">
+  </div>
+  <div class="form-group">
+    <label for="email">Your email:</label>
+    <input type="email" class="form-control" id="email">
+  <div class="form-group">
+    <label for="message">Message:</label>
+    <textarea class="form-control" rows ="5" id="message">
+    </textarea>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+</div>
 </div>
 </body>
 </html>

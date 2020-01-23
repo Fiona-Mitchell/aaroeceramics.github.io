@@ -1,0 +1,53 @@
+body{
+font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: black;
+  overflow: hidden;
+  background-color: white;
+  padding: 20px 10px;
+}
+
+.header a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+.header a.current {
+  color: gray;
+}
+
+.floating {
+float: left;
+width:15%
+text: center;
+text-decoration: none;
+margin-right: 65px;
+}
+
+
+.gallery {
+  width: 1000px;
+}
+
+.about {
+  width: 980px;
+  margin-left: 20px;
+}
+
+.contact {
+  margin-left: 20px;
+}
+
+.form {
+  width: 750px;
+}
