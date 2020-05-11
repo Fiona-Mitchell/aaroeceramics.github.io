@@ -10,9 +10,9 @@
       <a class="current" href="index.html"> <img class="logo" src="images/logo.png" alt="Ingrid Aarow Ceramics Logo"></a>
     <ul>
       <div class="links">
-        <li> <a href="portfolio.html">Portfolio</a> </li>
-        <li> <a href="about.html">About</a> </li>
         <li> <a href="contact.html">Contact</a> </li>
+        <li> <a href="about.html">About</a> </li>
+        <li> <a href="portfolio.html">Portfolio</a> </li>
       </div>
     </ul>
   </div>
@@ -22,97 +22,49 @@
   <div class="ceramics fade">
     <img src="images/background-2.jpg" style="width:100%" alt="ceramics">
   </div>
-  <!-- <div class="gallery">
-    <div class="row">
-      <div class="column">
-        <div class="three_images">
-          <div class="main_image">
-            <a href="#img2"><img src="Images/2.png" class="gallery-image hover-shadow"></a>
-          </div>
-          <div class="images_column">
-            <a href="#img1"><img src="Images/1.png" class="gallery-image hover-shadow"></a>
-            <a href="#img3"><img src="Images/3.png" class="gallery-image hover-shadow"></a>
-          </div>
-        </div>
-      </div>
-      <div class="column">
-        <div class="three_images">
-          <div class="landscape">
-            <a href="#img8"><img src="Images/8.png" class="gallery-image hover-shadow"></a>
-          </div>
-          <div class="two_images">
-            <a href="#img4"><img src="Images/4.png" class="gallery-image hover-shadow"></a>
-            <a href="#img9"><img src="Images/9.jpeg" class="gallery-image hover-shadow"></a>
-          </div>
-        </div>
-      </div>
-      <div class="column">
-        <div class="three_images">
-          <div class="images_column">
-            <a href="#img10"><img src="Images/10.png" class="gallery-image hover-shadow"></a>
-            <a href="#img14"><img src="Images/14.png" class="gallery-image hover-shadow"></a>
-          </div>
-          <div class="main_image">
-            <a href="#img13"><img src="Images/13.png" class="gallery-image hover-shadow"></a>
-          </div>
-        </div>
-      </div>
-      <div class="column">
-        <div class="three_images">
-          <div class="landscape">
-            <a href="#img20"><img src="Images/20.png" class="gallery-image hover-shadow"></a>
-          </div>
-          <div class="two_images">
-            <a href="#img6"><img src="Images/6.png" class="gallery-image hover-shadow"></a>
-            <a href="#img16"><img src="Images/16.png" class="gallery-image hover-shadow"></a>
-          </div>
-        </div>
-      </div>
-    </div>
+
+  <div class="ceramics fade">
+    <img src="images/background.jpg" style="width:100%" alt="ceramics">
   </div>
 
-      <a href="#_" class="lightbox" id="img1">
-        <img src="Images/1-large.png">
-      </a>
-      <a href="#_" class="lightbox" id="img2">
-        <img src="Images/2-large.png">
-      </a>
-      <a href="#_" class="lightbox" id="img3">
-        <img src="Images/3-large.png">
-      </a>
-      <a href="#_" class="lightbox" id="img4">
-        <img src="Images/4-large.png">
-      </a>
-      <a href="#_" class="lightbox" id="img6">
-        <img src="Images/6-large.png">
-      </a>
-      <a href="#_" class="lightbox" id="img8">
-        <img src="Images/8-large.png">
-      </a>
-      <a href="#_" class="lightbox" id="img9">
-        <img src="Images/9.jpeg">
-      </a>
-      <a href="#_" class="lightbox" id="img10">
-        <img src="Images/10-large.png">
-      </a>
-      <a href="#_" class="lightbox" id="img13">
-        <img src="Images/13-large.png">
-      </a>
-      <a href="#_" class="lightbox" id="img14">
-        <img src="Images/14-large.png">
-      </a>
-      <a href="#_" class="lightbox" id="img16">
-        <img src="Images/16-large.png">
-      </a>
-      <a href="#_" class="lightbox" id="img17">
-        <img src="Images/17-large.png">
-      </a>
-      <a href="#_" class="lightbox" id="img18">
-        <img src="Images/18-large.png">
-      </a>
-      <a href="#_" class="lightbox" id="img20">
-        <img src="Images/20-large.png">
-      </a> -->
+  <div class="ceramics fade">
+    <img src="images/background-3.jpg" style="width:100%" alt="ceramics">
+  </div>
+</div>
 
-    </body>
-    </html>
+  <div class="menu-dots">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+
+  <script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("ceramics");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000);
+  }
+  </script>
+  </body>
+  <footer>
+    <img class="social-media" src="images/instagram.png">
+  </footer>
+  </html>
