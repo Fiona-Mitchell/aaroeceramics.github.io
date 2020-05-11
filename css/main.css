@@ -1,20 +1,50 @@
-* {
+/* colour scheme
+
+#0D0630   dark blue
+#4A5759   moss green
+#DEDBD2   beige
+#B0C4B1   light khaki
+---------------------*/
+
+
+html{
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 300;
 }
+
 
 body{
-font-family: 'Montserrat', sans-serif;
+
 }
 
+/* Nav bar
+---------------------*/
+
 .header {
-  font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   color: black;
   overflow: hidden;
   background-color: white;
   width: 100%;
-  margin-left: 50px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
+
+ul{
+  list-style: none;
+  margin-top:8px;
+}
+
+a{
+  padding: 5px 10px;
+}
+
+li{
+  text-decoration: none;
+  float:right;
+  padding: 0 10px 10px 10px;
+}
+
 
 .header a {
   color: black;
@@ -23,13 +53,28 @@ font-family: 'Montserrat', sans-serif;
 }
 
 .header a:hover {
-  color: blue;
   text-decoration: none;
+  border-radius: 2px;
+  text-decoration: line-through;
 }
 
 .header a.current {
   color: gray;
 }
+
+
+/* Logo
+---------------------*/
+
+.logo{
+  margin-left: 20px;
+  float: left;
+  height: 70px;
+  width: auto;
+}
+
+/* Gallery
+---------------------*/
 
 .gallery {
   display: flex;
