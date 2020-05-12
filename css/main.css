@@ -11,8 +11,30 @@ html{
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300;
+  font-size: 14px;
 }
 
+h1{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h2{
+  font-size: 15px;
+  font-weight: 200;
+}
+
+h3{
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+p{
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+}
 
 body{
 margin:0;
@@ -43,6 +65,8 @@ li{
   text-decoration: none;
   float:right;
   padding: 0 10px 10px 10px;
+  font-size: 15px;
+  font-weight: 300;
 }
 
 
@@ -59,7 +83,7 @@ li{
 }
 
 .header a.current {
-  color: gray;
+  color: #4A5759;
 }
 
 
@@ -81,6 +105,7 @@ li{
   max-width: 100%;
   position: relative;
   margin: auto;
+  animation-delay: 0s;
 }
 
 .ceramics {display: none;}
@@ -138,7 +163,7 @@ footer{
 
 
 
-
+/*
 .gallery {
   display: flex;
   width: 100%;
@@ -186,25 +211,28 @@ margin-right: 65px;
 
 .two_images {
   display: flex;
-}
+} */
 
+
+/** about */
 
 .about {
-  font-size: 16px;
-  margin-top: 30px;
+  margin: 30px 80px;
   max-width: 100%;
 }
 
 .about_image {
   float: left;
-  max-width: 50%;
-  margin-left: 50px;
+  max-width: 300px;
+  margin: 50px;
 }
 
-.about_text {
-  float: left;
-  max-width: 700px;
-  margin-left: 50px;
+.about_text{
+  padding-top: 30px;
+}
+
+.about_text p{
+  display: inline;
 }
 
 .column {
@@ -212,40 +240,75 @@ margin-right: 65px;
   height: auto;
 }
 
-@media (max-width:1000px) {
-  .about {
-    display: flex;
-    font-size: 30px;
-    width: 100%;
-    flex-direction: column;
-  }
-  .about-image {
-    width: 100%;
-  }
-  .about-text {
-    width: 100%;
-  }
-  .column {
-    max-width: 100%;
-  }
-  .contact {
-    font-size: 30px;
-  }
-
+.block{
+  display: inline-block;
 }
+
+/** contact */
 
 .contact {
   margin-top: 20px;
-  margin-left: 50px;
+  text-align: center;
 }
 
-.form {
-  width: 750px;
+.contact-form {
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 80px;
+  background-color: #DEDBD2 ;
+  border-radius: 20px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width:60%;
 }
 
-.btn-default {
-  border-style: solid;
+.contact-form-small {
+  text-align: center;
+  margin-bottom: 80px;
+  background-color: #DEDBD2 ;
+  border-radius: 20px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width:300px;
 }
+
+.form-control {
+    display: block;
+    width: 70%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-clip: padding-box;
+    border: 1.5px solid #4A5759;
+    border-radius: .25rem;
+    margin:1rem auto 2rem auto;
+}
+
+
+.contact-header{
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-intro{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.btn{
+  padding:12px;
+  border-radius: 20px;
+  border: 2px solid #4A5759;
+  font-size: 14px;
+  color: #fff;
+  background-color: #4A5759;
+}
+
+
 .lightbox {
 	/** Default lightbox to hidden */
 	display: none;
@@ -274,9 +337,4 @@ margin-right: 65px;
 
 	/** Unhide lightbox **/
 	display: block;
-}
-
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
