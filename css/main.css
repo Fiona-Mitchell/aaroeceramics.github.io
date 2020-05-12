@@ -161,58 +161,21 @@ footer{
     text-align: center;
 }
 
-
-
-/*
-.gallery {
-  display: flex;
-  width: 100%;
-  margin-top: 20px;
-  overflow: hidden;
+/* Portfolio
+---------------------*/
+.gallery{
+margin: 50px 0;
 }
 
-.gallery-image {
-  width: 100%;
-  height: auto;
+.gallery-img{
+  width:40%;
 }
 
-.floating {
-float: left;
-width:15%
-text: center;
-text-decoration: none;
-margin-right: 65px;
+.gallery-item{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
-
-.three_images {
-  display: inherit;
-}
-
-.image_grid {
-  display: inherit;
-}
-
-.landscape {
-  display: inherit;
-}
-
-.main_image {
-  width: 50%;
-  float: left;
-  display: flex;
-}
-
-.images_column {
-  width: 50%;
-  float: left;
-  display: flex;
-  flex-direction: column;
-}
-
-.two_images {
-  display: flex;
-} */
-
 
 /** about */
 
